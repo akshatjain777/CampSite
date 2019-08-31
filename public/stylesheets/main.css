@@ -1,0 +1,38 @@
+.card img {
+    width: 100%;
+}
+.img-thumbnail {
+   padding: 0; 
+}
+.caption-full {
+    padding: 9px;
+}
+#delete-form {
+    display: inline;
+}
+
+.delete-form {
+    display: inline;
+}
+.index-btn{
+    float: right;
+}
+.col-8 hr {
+    text-align: left;
+    margin-left: 0;
+    width: 66%;
+}
+
+.footer {
+    position: fixed;
+    margin-top: 500px;
+    text-align: center;
+}
+.landing-btn{
+  color: rgb(0,100,0);
+  background-color: transparent;
+  border-color: #006400;
+  background-image: none;
+  border-radius: 35px;
+  border: 1px solid rgba(40, 167, 69, 0.75);   
+}

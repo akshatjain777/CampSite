@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+
+<div style="text-align: center;">
+  <h1>Login</h1>
+</div>
+
+
+<form action="/login" method="POST">
+    <div style="text-align:left; margin-top:20px;" class="container">
+      <div style="width: 30%; margin: 30px auto" class="form-group">
+        <label for="LoginInputUsername">Username</label>
+        <input type="text" class="form-control" id="LoginInputUsername" name="username" placeholder="Username">
+      </div>
+      <div style="width: 30%; margin: 30px auto" class="form-group">
+        <label for="LoginInputPassword">Password</label>
+        <input type="password" class="form-control" id="LoginInputPassword" name="password" placeholder="Password">
+      </div>
+      <div style="text-align:center;">
+        <input class="btn btn-primary" type="submit" value="Login">
+      </div>        
+    </div>  
+</form>
+
+<% include ./partials/footer %>
+
+<form>

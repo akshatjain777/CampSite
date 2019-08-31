@@ -1,0 +1,40 @@
+<% include ./partials/header %>
+
+<div style="text-align: center;">
+  <h1>Sign Up</h1>
+</div>
+
+<form action="/register" method="POST">
+    <div style="text-align:left; margin-top:20px;" class="container">
+      <div style="width: 30%; margin: 30px auto" class="form-group">
+        <label for="SignUpUsername">Username</label>
+        <input type="text" class="form-control" name="username" id="SignUpUsername" aria-describedby="emailHelp" placeholder="Username">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div style="width: 30%; margin: 30px auto" class="form-group">
+        <label for="SignupPassword">Password</label>
+        <input type="password" class="form-control" name="password" id="SignupPassword" placeholder="Password">
+      </div>
+      <div style="width: 30%; margin: 30px auto" class="form-group">
+        <label for="SignupFirstName">First Name</label>
+        <input type="text" class="form-control" name="firstname" id="SignupFirstName" placeholder="First Name">
+      </div>
+      <div style="width: 30%; margin: 30px auto" class="form-group">
+        <label for="SignupLastName">Last Name</label>
+        <input type="text" class="form-control" name="lastname" id="SignupLastName" placeholder="Last Name">
+      </div>
+      <div style="width: 30%; margin: 30px auto" class="form-group">
+        <label for="SignUpEmail">Email</label>
+        <input type="email" class="form-control" name="email" id="SignUpEmail" placeholder="Email">
+      </div>
+      <div style="width: 30%; margin: 30px auto" class="form-group">
+        <label for="SignupAdminKey">Admin-Key: </label>
+        <input type="password" class="form-control" name="adminKey" id="SignupAdminKey" placeholder="Admin-Key">
+      </div>
+      <div style="text-align:center;">
+        <input class="btn btn-primary" type="submit" value="SignUp">
+      </div>        
+    </div>  
+</form>
+
+<% include ./partials/footer %>

@@ -1,0 +1,17 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div>
+        <h1><%= user.firstname + " " + user.lastname %></h1>
+        <div style="margin-top: 50px;">
+            <h3><%= user.username %>'s campgrounds: </h3>
+            <ul>
+                <% campgrounds.forEach(function(campground) { %>
+                    <li><a href="/campgrounds/<%= campground.id %>"><%= campground.name %></a></li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>    
+</html>
