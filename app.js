@@ -17,7 +17,15 @@ var commentsRoutes   = require("./routes/comments"),
     indexRoutes      = require("./routes/index");
 
 
-mongoose.connect("mongodb://localhost:27017/camping_site", {useNewUrlParser: true});
+// assign mongoose promise library and connect to database
+mongoose.connect('mongodb+srv://AkshatJain: #@c0CsTuh7IDYP2D@cluster0-3kvda.mongodb.net/test?retryWrites=true&w=majority', {
+	useNewUrlParser: true,
+	useCreateIndex: true
+}).then(() => {
+	console.log('Connected To Database');
+}).catch(err => {
+	console.log('Error:', err.message);
+});
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs" );
 app.use(express.static(__dirname + "/public"));
