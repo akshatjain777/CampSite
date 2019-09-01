@@ -18,7 +18,7 @@ var commentsRoutes   = require("./routes/comments"),
 
 
 // assign mongoose promise library and connect to database
-mongoose.connect('mongodb+srv://AkshatJain: #@c0CsTuh7IDYP2D@cluster0-3kvda.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://campsite:akshat123@campingsite-scfq3.mongodb.net/test?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
